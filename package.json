@@ -1,9 +1,9 @@
 {
   "name": "hello-eleventy",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple blog, set up with Eleventy.",
   "scripts": {
-    "start": "eleventy --serve",
+    "start": "eleventy --incremental --serve",
     "build": "NODE_ENV=production eleventy"
   },
   "dependencies": {
@@ -11,7 +11,7 @@
     "luxon": "2.3.0"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^1.0.0"
   },
   "engines": {
     "node": "12"
