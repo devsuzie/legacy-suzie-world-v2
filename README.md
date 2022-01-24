@@ -38,7 +38,7 @@ With the site preview open on the right and the Glitch editor open on the left, 
 
 Your site can use incremental builds, so if for example you only change a markdown file, Glitch would just rewrite the relevant page instead of rebuilding the whole site–to enable this, change your `package.json` `start` command to `eleventy --incremental --serve`. 
 
-_When you add or delete a file and your preview does not update straight away on refresh, you can enter `eleventy --serve` in your proejct terminal to force a rewrite._
+_When you add or delete a file and your preview does not update straight away on refresh, you can enter `eleventy --serve` in your project terminal to force a rewrite._
 
 Check out `TODO.md` for some more optional next steps.
 
