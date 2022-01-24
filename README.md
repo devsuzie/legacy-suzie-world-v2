@@ -16,7 +16,7 @@ You'll get best use out of this project if you're familiar with basic HTML and J
 
 ← `.eleventy.js`: Here you can configure how Eleventy builds your content into the site. Read through the initial blog posts in the site for steps on extending this code.
 
-← `package.json`: Your project's dependencies, where you will also find the start command to run eleventy. Your site can use incremental builds, so if for example you only change a markdown file, Glitch will just rewrite the relevant page instead of rebuilding the whole site–to enable this, change your `package.json` `start` command to `eleventy --incremental --serve`.
+← `package.json`: Your project's dependencies, where you will also find the start command to run eleventy. 
 
 ← `src/`: This folder contains all the files Eleventy will use to build your site.
 
@@ -35,6 +35,10 @@ ___Want a basic template version of this project to build your own Eleventy app?
 ## Try this next 🏗️
 
 With the site preview open on the right and the Glitch editor open on the left, navigate through the initial blog posts to learn more and carry out some development on your Eleventy site!
+
+Your site can use incremental builds, so if for example you only change a markdown file, Glitch would just rewrite the relevant page instead of rebuilding the whole site–to enable this, change your `package.json` `start` command to `eleventy --incremental --serve`. 
+
+_When you add or delete a file and your preview does not update straight away on refresh, you can enter `eleventy --serve` in your proejct terminal to force a rewrite._
 
 Check out `TODO.md` for some more optional next steps.
 
