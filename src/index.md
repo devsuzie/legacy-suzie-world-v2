@@ -8,9 +8,10 @@ layout: layouts/home.njk
 
 # Suzie World
 
-Hi. I’m Suzie Kim a.k.a devsuzie, a software developer in Seoul City. I desire
-to be a person who makes things what I want to make without fear. Repeat small
-successes and failures. Always welcome to learn and accept new things. Record
-the dots of life to make them a line. I like summer night walks.
+Hi. I’m Suzie Kim a.k.a devsuzie, a software developer in Seoul, South Korea.
+Currently working as a front-end developer at a fintech company in the city. I
+desire to be a person who makes things what I want to make without fear. I
+Repeat small successes and failures and always welcome to learn and accept new
+things. Love summer night walks and books.
 
 ### Posts
