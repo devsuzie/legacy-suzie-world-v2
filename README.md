@@ -1,4 +1,4 @@
-# Hello Suzie!
+# Suzie World
 
 This project is a blog powered by [Eleventy](https://www.11ty.dev/), a
 lightweight static site generator. That means you get all the power of a
