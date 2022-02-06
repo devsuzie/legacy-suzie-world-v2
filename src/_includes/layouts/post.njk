@@ -1,33 +1,59 @@
----
-layout: layouts/base.njk
-templateClass: tmpl-home
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Your new 11ty blog" />
+    <link rel="stylesheet" type="text/css" href="/public/style/post.css" />
+    <link href="/public/style/code.css" rel="stylesheet">
+    {% seo "" %}
+  </head>
+  <body>
+  <main>
+    <div class="wrapper post">
+      <div style="width: 100%">
+        {# The post front matter includes the title property #}
+        <h1 class='postTitle'>{{title}}</h1>
+        <span class='postDate'>{{date | htmlDateString}}</span>
 
-{# This is the template for individual blog posts–it builds the front matter properties into the page #}
+        {# Content from the body of the post markdown appears here #}
+        <div class="content">
+        {{ content | safe }}
+        </div>
 
-<div class="wrapper post">
-  <div>
-    {# The post front matter includes the title property #}
-    <h1 class='postTitle'>{{title}}</h1>
-
-    {# ADD P ELEMENT FROM TODO ON THE NEXT LINE #}
-    
-    {# Content from the body of the post markdown appears here #}
-    {{ content | safe }}
-    <div class="controls">
-    {# The previous and next post data is added in .eleventy.js #}
-    {% if prevPost.url %}
-      <p>
-        <strong>Previous post</strong>: 
-        <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
-      </p>
-    {% endif %}
-    {% if nextPost.url %}
-      <p>
-        <strong>Next post</strong>: 
-        <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-      </p>
-    {% endif %}
+        <div class="controls">
+        {# The previous and next post data is added in .eleventy.js #}
+        {% if prevPost.url %}
+          <p>
+            <strong>Previous post</strong>:
+            <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+          </p>
+        {% endif %}
+        {% if nextPost.url %}
+          <p>
+            <strong>Next post</strong>:
+            <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+          </p>
+        {% endif %}
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+
+    <footer class="footer">
+      <div class="links">
+        <a href="/">Home</a>
+        <span class="divider">|</span>
+        <a href="/posts">Posts</a>
+        <span class="divider">|</span>
+        <a href="/about">About</a>
+      </div>
+      <a class="btn--remix" target="_blank" href="https://github.com/devsuzie">
+      <img src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140" alt="Github" />
+      Github
+      </a>
+    </footer>
+
+  </main>
+  </body>
+</html>

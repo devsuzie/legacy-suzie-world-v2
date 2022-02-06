@@ -1,13 +1,26 @@
 ---
-layout: layouts/page.njk
+layout: layouts/about.njk
 ---
 
-## About this site
+## About
 
-Here you can write some details about you and your new blog: 
+### Work
 
-- 🎉 I love blogging
-- 💥 I built this site using [Eleventy](https://www.11ty.dev/) on [Glitch](https://glitch.com/)
-- 🌈 Thanks for reading!
+- 2020.10 ~ Current — Web Software Engineer At
+  [Banksalad](https://www.banksalad.com/)
+- 2020.03 ~ 2020.10 — Web Software Engineer At
+  [Chanloigs](http://chainlogis.com/)
 
-You can also make your project available for other people to remix in Glitch! 🎏✨
+### Skills
+
+- Javascript
+- TypeScript
+- React
+- NodeJS
+
+### Contact
+
+- [Github](https://github.com/devsuzie)
+- [Mail](mailto:suuuzie18@gmail.com)
+- [Linked In](https://www.linkedin.com/in/devsuzie/)
+- [Twitter](https://twitter.com/devsuzie_)

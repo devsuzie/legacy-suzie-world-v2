@@ -1,17 +1,52 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-home
+pagination:
+  data: collections.posts
+  size: 15
+  alias: posts
 ---
 
 {# This is the template for the Posts page–it lists the posts in the collection #}
 
 <div class="wrapper home">
   <div class="content">
+    {# posts.md #}
     {{ content | safe }}
-    <ul>
-      {%- for post in collections.posts -%}
+
+
+    {# Todo: Tags #}
+    {# <ul class="tag-wrapper">
+      {% for tag in collections.tagList %}
+        <li class="tag-list">#{{ tag }}</li>
+      {% endfor %}
+    </ul> #}
+
+    {# Posts #}
+    <ul style="margin-top: 2rem">
+      {%- for post in posts -%}
+        {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
         <li{% if page.url == post.url %} aria-current="page"{% endif %}>{{ post.data.page.date | htmlDateString }} — <a href='{{ post.url }}'>{{ post.data.title }}</a></li>
       {%- endfor -%}
     </ul>
+
+    {# Pagination #}
+    {% if pagination.pageLinks.length > 1 %}
+      <nav class="pagination">
+        {% if pagination.previousPageLink %}
+          <a class="pagination__item" href="{{ pagination.previousPageHref | url }}">Previous Page</a>
+        {% else %}
+          <span class="pagination__item">Previous Page</span>
+        {% endif %}
+
+        <span class="page-number">— {{ pagination.pageNumber + 1 }} —</span>
+
+        {% if pagination.nextPageLink %}
+          <a class="pagination__item" href="{{ pagination.nextPageHref | url }}">Next Page</a>
+        {% else %}
+          <span class="pagination__item">Next Page</span>
+        {% endif %}
+      </nav>
+    {% endif %}
   </div>
 </div>

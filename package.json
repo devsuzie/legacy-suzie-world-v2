@@ -8,10 +8,12 @@
   },
   "dependencies": {
     "eleventy-plugin-seo": "0.5.2",
+    "eleventy-plugin-youtube-embed": "^1.6.5",
     "luxon": "2.3.0"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0"
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0"
   },
   "engines": {
     "node": "12"

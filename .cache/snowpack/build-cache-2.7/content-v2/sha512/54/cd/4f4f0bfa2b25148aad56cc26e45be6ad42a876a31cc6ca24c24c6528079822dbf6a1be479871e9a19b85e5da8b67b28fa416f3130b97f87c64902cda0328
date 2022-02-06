@@ -1,0 +1,1 @@
+{".js":{"code":"/**\n * This file is just a silly example to show everything working in the browser.\n * When you're ready to start on your site, clear the file. Happy hacking!\n **/\n\nimport confetti from 'canvas-confetti';\n\nconfetti.create(document.getElementById('canvas'), {\n  resize: true,\n  useWorker: true,\n})({ particleCount: 200, spread: 200 });"}}
