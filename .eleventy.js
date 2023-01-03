@@ -2,6 +2,7 @@ const {DateTime} = require('luxon');
 const pluginSEO = require('eleventy-plugin-seo');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const embedYouTube = require('eleventy-plugin-youtube-embed');
+const embedSpotify = require("eleventy-plugin-embed-spotify");
 
 /**
  * This is the JavaScript code that determines the config for your Eleventy site
@@ -40,6 +41,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSEO, seo);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(embedYouTube);
+  eleventyConfig.addPlugin(embedSpotify);
 
   // Filters let you modify the content https://www.11ty.dev/docs/filters/
   eleventyConfig.addFilter('htmlDateString', dateObj => {
