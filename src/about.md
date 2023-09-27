@@ -6,9 +6,11 @@ layout: layouts/about.njk
 
 ### Work
 
-- 2020.10 ~ Current — Web Software Engineer At
+- 2023.07 ~ Current — Software Engineer At
+  [Bill](https://www.bill.com/)
+- 2020.10 ~ 2023.02 — Front-End Engineer At
   [Banksalad](https://www.banksalad.com/)
-- 2020.03 ~ 2020.10 — Web Software Engineer At
+- 2020.03 ~ 2020.10 — Front-End Engineer At
   [Chanloigs](http://chainlogis.com/)
 
 ### Skills
